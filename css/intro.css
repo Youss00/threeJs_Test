@@ -1,0 +1,78 @@
+/* intro.css */
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: rgb(3,51,82);
+    background: linear-gradient(180deg, rgba(3,51,82,1) 0%, rgba(50,51,101,1) 49%, rgba(0,120,85,1) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  #loading-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  #loading-text {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  #loading-bar-container {
+    width: 80%;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  #loading-bar {
+    height: 20px;
+    width: 0;
+    background: #00ffcc;
+    transition: width 1s ease-out;
+  }
+  
+  #loading-message {
+    font-size: 1.2em;
+  }
+  
+/* intro.css */
+
+#start-button {
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00ffcc;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    display: none; /* Assure-toi que l'élément est caché par défaut */
+  }
+  
+  
+  #start-button.hidden {
+    display: none;
+  }
+  
+  #main-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+  
